@@ -1,3 +1,5 @@
+document.documentElement.classList.remove("no-js");
+
 function copyEmail() {
     navigator.clipboard.writeText("cyber-ps@yandex.ru");
     alert("Email скопирован в буфер обмена: cyber-ps@yandex.ru");
@@ -16,3 +18,23 @@ function downloadPresentation() {
     console.log('Презентация скачана');
     
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.05 // более ранняя активация
+        }
+    );
+
+    document.querySelectorAll('.animate-in').forEach(el => {
+        observer.observe(el);
+    });
+});
