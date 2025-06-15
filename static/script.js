@@ -4,11 +4,11 @@ function copyEmail() {
 }
 
 function downloadPresentation() {
-    const fileUrl = 'media/вариант.pdf';
+    const fileUrl = 'media/Аргус_КС.pdf';
     
     const link = document.createElement('a');
     link.href = fileUrl;
-    link.download = 'вариант.pdf';
+    link.download = 'Аргус_КС.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
