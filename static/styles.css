@@ -116,9 +116,9 @@ header {
     color: #666;
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 375px) {
     .header-title {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .header-description {
