@@ -4,10 +4,8 @@ function copyEmail() {
 }
 
 function downloadPresentation() {
-    // Здесь может быть ссылка на ваш PDF-файл
     const fileUrl = 'media/вариант.pdf';
     
-    // Создаем временную ссылку для скачивания
     const link = document.createElement('a');
     link.href = fileUrl;
     link.download = 'вариант.pdf';
@@ -15,7 +13,6 @@ function downloadPresentation() {
     link.click();
     document.body.removeChild(link);
     
-    // Можно добавить аналитику
     console.log('Презентация скачана');
     
 }
