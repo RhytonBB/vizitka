@@ -116,17 +116,19 @@ header {
     color: #666;
 }
 
-@media screen and (max-width: 425px) {
-    header {
-        padding: 40px 20px;
-    }
-
+@media screen and (max-width: 500px) {
     .header-title {
         font-size: 32px;
     }
 
     .header-description {
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header {
+        padding: 40px 20px;
     }
 
     .btn-primary {
