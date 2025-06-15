@@ -181,3 +181,65 @@ header {
         font-size: 14px;
     }
 }
+
+/* Светлая тема при предпочтении пользователя */
+@media (prefers-color-scheme: light) {
+    body {
+        background: linear-gradient(135deg, #f5f7fa, #e4e9f2);
+        color: #000;
+    }
+
+    header {
+        background: radial-gradient(circle at top, #dee6ff 0%, #f5f7fa 100%);
+    }
+
+    .header-title {
+        color: #5a4acc;
+    }
+
+    .header-description {
+        color: #444;
+    }
+
+    .btn-primary {
+        background: linear-gradient(90deg, #6a5acd, #00bfff);
+        color: #fff;
+    }
+
+    .section h2 {
+        color: #0077cc;
+    }
+
+    .description {
+        background: #ffffff;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .description:hover {
+        box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .description h3 {
+        color: #5a4acc;
+    }
+
+    .description p {
+        color: #333;
+    }
+
+    .btn-secondary {
+        border-color: rgba(90, 74, 204, 0.3);
+        color: rgba(90, 74, 204, 0.8);
+    }
+
+    .btn-secondary:hover {
+        color: #000;
+        border-color: #5a4acc;
+        box-shadow: 0 0 8px rgba(90, 74, 204, 0.3);
+    }
+
+    .footer {
+        background: #e4e9f2;
+        color: #666;
+    }
+}
