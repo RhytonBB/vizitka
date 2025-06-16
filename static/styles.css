@@ -43,7 +43,7 @@ body {
 
 /* ===== main ===== */
 .main {
-    padding: 140px 20px 60px;
+    padding: 100px 20px 60px;
     text-align: center;
     background: radial-gradient(circle at top, #222b4d 0%, #0f111a 100%);
 }
@@ -103,6 +103,28 @@ body {
     font-size: 20px;
 }
 
+.contact {
+    padding: 40px 20px 40px;
+    text-align: center;
+    background: radial-gradient(circle at top, #222b4d 0%, #0f111a 100%);
+
+}
+
+.contact-title {
+    font-size: 32px;
+    margin: 0;
+    color: #8f78ff;
+    letter-spacing: 2px;
+}
+
+.contact-description {
+    font-size: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -112,6 +134,8 @@ body {
 
 .card {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-description {
@@ -120,6 +144,14 @@ body {
     padding: 24px;
     box-shadow: 0 0 16px rgba(138, 96, 255, 0.2);
     transition: box-shadow 0.3s, transform 0.3s;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:first-child > .btn-secondary {
+    align-self: center;
+    margin-top: 20px;
 }
 
 .card-description:hover {
@@ -248,6 +280,10 @@ body {
     .section-text {
         font-size: 18px;
     }
+
+    .contact-description {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -273,6 +309,10 @@ body {
         font-size: 28px;
     }
 
+    .contact-title {
+        font-size: 28px;
+    }
+
     .btn-secondary {
         margin-top: 20px;
     }
@@ -286,6 +326,7 @@ body {
     .logo {
         height: 37px;
     }
+
     .logo svg {
         height: 37px;
     }
@@ -308,11 +349,27 @@ body {
         font-size: 14px;
     }
 
+    .section {
+        padding: 15px 20px;
+    }
+
     .section h2 {
         font-size: 22px;
     }
 
     .section-text {
+        font-size: 16px;
+    }
+
+    .contact {
+        padding: 30px 20px;
+    }
+
+    .contact-title {
+        font-size: 22px;
+    }
+
+    .contact-description {
         font-size: 16px;
     }
 
